@@ -99,7 +99,7 @@ module.exports = class DMTypingIndicator extends Plugin {
   }
 
   _forceUpdateHomeButton () {
-    FluxDispatcher.dirtyDispatch({ type: 'DMTI_REFRESH_HOME' });
+    FluxDispatcher.dispatch({ type: 'DMTI_REFRESH_HOME' });
   }
 
   pluginWillUnload () {
