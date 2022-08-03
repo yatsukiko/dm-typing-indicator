@@ -22,7 +22,7 @@ function handleTypingStart ({ channelId, userId }) {
     channelTypingUsers[userId] = userStore?.getUser(userId);
     typingUsers[channelId] = channelTypingUsers;
 
-    FluxDispatcher.dirtyDispatch({ type: 'DMTI_REFRESH_HOME' });
+    FluxDispatcher.dispatch({ type: 'DMTI_REFRESH_HOME' });
   }
 }
 
@@ -39,7 +39,7 @@ function handleTypingStop ({ channelId, userId }) {
       delete typingUsers[channelId];
     }
 
-    FluxDispatcher.dirtyDispatch({ type: 'DMTI_REFRESH_HOME' });
+    FluxDispatcher.dispatch({ type: 'DMTI_REFRESH_HOME' });
   }
 }
 
