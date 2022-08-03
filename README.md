@@ -1,3 +1,9 @@
+halo this might be what u looking for, updated for latest canary update which literally just "cleaned" `dirtyDispatch` to just `dispatch`
+
+
+
+
+
 ## Installation
 To install this plugin go to your plugins directory and clone it with the command below.
 
